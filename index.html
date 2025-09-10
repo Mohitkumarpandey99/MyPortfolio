@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Pandey - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Mohit Pandey</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">
+                        Hi, I'm Mohit Pandey
+                    </h1>
+                    <p class="home-subtitle">Computer Science Student & Developer</p>
+                    <p class="home-description">
+                        Motivated and enthusiastic Computer Science student with strong foundations in C, Java, and Web Development. 
+                        Experienced in solving 200+ coding problems and building practical projects.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="image.jpg" alt="Mohit Pandey" onerror="this.style.display='none';">
+                        
+                        </div>
+                        <div class="profile-info">
+                            <h3>Mohit Pandey</h3>
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Computer Science student at Netaji Subhash University, Jamshedpur, 
+                        with a strong foundation in programming and web development. I've solved 200+ coding 
+                        problems and built several practical projects including e-commerce and streaming UIs.
+                    </p>
+                    <p>
+                        I'm committed to continuous learning and growth in the tech industry, always eager 
+                        to contribute to real-world projects and expand my skill set.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skills">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skills">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other Skills</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="others">Others</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Myntra UI Clone</h3>
+                        <p>Developed a responsive e-commerce front-end using HTML, CSS, and JavaScript. Focused on replicating real-world product catalog design and responsiveness.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Netflix UI Clone</h3>
+                        <p>Designed an interactive streaming platform UI with HTML, CSS, and JS, simulating media browsing experience.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="others">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>To-Do App</h3>
+                        <p>Built a task management application using JavaScript & DOM manipulation. Implemented features for adding, editing, and deleting tasks.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Basic Calculator</h3>
+                        <p>Developed a fully functional calculator with HTML, CSS, and JavaScript. Features basic arithmetic operations with a clean, responsive interface.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="others">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Snake Game</h3>
+                        <p>Created a classic Snake game in C language with console graphics. Features score tracking, game over detection, and smooth gameplay mechanics with keyboard controls.</p>
+                        <div class="project-tech">
+                            <span>C Language</span>
+                            <span>Console App</span>
+                            <span>Game Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="others">
+                    <div class="project-image">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>Built a Tic Tac Toe game in C language with both Human vs Computer and Human vs Human modes. Features intelligent AI opponent and interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>C Language</span>
+                            <span>Console App</span>
+                            <span>Game Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-download"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <div class="resume-info">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Technology - Computer Science</h4>
+                        <p class="resume-company">Netaji Subhash University, Jamshedpur</p>
+                        <p class="resume-date">2025-2029</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Class 12 – 69% (PCM)</h4>
+                        <p class="resume-company">Lal Bahadur Shastri College</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Class 10 – 70%</h4>
+                        <p class="resume-company">Kerala Public School</p>
+                    </div>
+                    
+                    <h3>Skills</h3>
+                    <div class="resume-item">
+                        <h4>Programming Languages</h4>
+                        <p>C, Java</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Web Technologies</h4>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Problem Solving</h4>
+                        <p>Solved 200+ coding questions in C & Java</p>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <div class="download-card">
+                        <i class="fas fa-download"></i>
+                        <h3>Download Resume</h3>
+                        <p>Get a copy of my resume in PDF format</p>
+                        <button class="btn btn-primary" id="download-resume">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kumarmohit03563@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>07859074451</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jamshedpur, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/mohit-kumar-493052340" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Mohitkumarpandey99" target="_blank">GitHub Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mohit Pandey. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Mohitkumarpandey99" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mohit-kumar-493052340" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:kumarmohit03563@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
