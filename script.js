@@ -263,14 +263,24 @@ window.addEventListener('load', () => {
     }
 });
 
-// Parallax effect for home section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
+// Parallax effect for home section (disabled on small screens)
+function applyParallax() {
     const homeSection = document.querySelector('.home-section');
-    if (homeSection) {
-        homeSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+    if (!homeSection) return;
+
+    if (window.innerWidth < 768) {
+        homeSection.style.transform = 'none';
+        return;
     }
-});
+
+    const scrolled = window.pageYOffset;
+    homeSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+}
+
+window.addEventListener('scroll', applyParallax);
+window.addEventListener('resize', applyParallax);
+// Initialize once
+applyParallax();
 
 // Add loading animation to elements
 document.addEventListener('DOMContentLoaded', () => {

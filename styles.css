@@ -743,6 +743,11 @@ body {
         gap: 2rem;
     }
 
+    /* Extra bottom padding so image doesn't get clipped by next section */
+    .home-section {
+        padding-bottom: 4rem;
+    }
+
     .home-title {
         font-size: 2.5rem;
     }
